@@ -1252,23 +1252,18 @@ rm -R -f ./$APP.AppDir/.junest/usr/lib/systemd/system/git-daemon@.service
 rm -R -f ./$APP.AppDir/.junest/usr/lib/systemd/system/git-daemon.socket
 rm -R -f ./$APP.AppDir/.junest/usr/lib/sysusers.d/git.conf
 rm -R -f ./$APP.AppDir/.junest/usr/man #APPIMAGES ARE NOT MENT TO HAVE MAN COMMAND
-rm -R -f ./$APP.AppDir/.junest/usr/share/bash-completion
-rm -R -f ./$APP.AppDir/.junest/usr/share/devtools
-rm -R -f ./$APP.AppDir/.junest/usr/share/fonts/*
-rm -R -f ./$APP.AppDir/.junest/usr/share/gcc-*
-rm -R -f ./$APP.AppDir/.junest/usr/share/gdb
-rm -R -f ./$APP.AppDir/.junest/usr/share/git
-rm -R -f ./$APP.AppDir/.junest/usr/share/git-*
-rm -R -f ./$APP.AppDir/.junest/usr/share/gitk
-rm -R -f ./$APP.AppDir/.junest/usr/share/gitweb
-rm -R -f ./$APP.AppDir/.junest/usr/share/makepkg
-rm -R -f ./$APP.AppDir/.junest/usr/share/makepkg-template
-rm -R -f ./$APP.AppDir/.junest/usr/share/man
-rm -R -f ./$APP.AppDir/.junest/usr/share/pacman
-rm -R -f ./$APP.AppDir/.junest/usr/share/perl5/vendor_perl/Git
-rm -R -f ./$APP.AppDir/.junest/usr/share/perl5/vendor_perl/Git.pm
-rm -R -f ./$APP.AppDir/.junest/usr/share/pkgconfig/libmakepkg.pc
-rm -R -f ./$APP.AppDir/.junest/usr/share/zsh/site-functions/_pacman
+
+mkdir save
+cp -r ./$APP.AppDir/.junest/usr/share/fontconfig ./save/
+cp -r ./$APP.AppDir/.junest/usr/share/glib-* ./save/
+cp -r ./$APP.AppDir/.junest/usr/share/gstreamer* ./save/
+cp -r ./$APP.AppDir/.junest/usr/share/locale ./save/
+cp -r ./$APP.AppDir/.junest/usr/share/mime ./save/
+cp -r ./$APP.AppDir/.junest/usr/share/$APP ./save/
+rm -R -f ./$APP.AppDir/.junest/usr/share/*
+mv ./save/* ./$APP.AppDir/.junest/usr/share/
+rmdir save
+
 rm -R -f ./$APP.AppDir/.junest/var/* #REMOVE ALL PACKAGES DOWNLOADED WITH THE PACKAGE MANAGER
 
 # ADDITIONAL REMOVALS
@@ -1276,14 +1271,6 @@ rm -R -f ./$APP.AppDir/.junest/usr/lib/d3d
 rm -R -f ./$APP.AppDir/.junest/usr/lib/perl*
 rm -R -f ./$APP.AppDir/.junest/usr/lib/systemd
 rm -R -f ./$APP.AppDir/.junest/usr/lib/udev
-rm -R -f ./$APP.AppDir/.junest/usr/share/fonts/*
-rm -R -f ./$APP.AppDir/.junest/usr/share/file
-rm -R -f ./$APP.AppDir/.junest/usr/share/gir-*
-rm -R -f ./$APP.AppDir/.junest/usr/share/hwdata
-rm -R -f ./$APP.AppDir/.junest/usr/share/icons/*
-rm -R -f ./$APP.AppDir/.junest/usr/share/perl*
-rm -R -f ./$APP.AppDir/.junest/usr/share/terminfo
-rm -R -f ./$APP.AppDir/.junest/usr/share/themes/*
 
 # REMOVE THE INBUILT HOME
 rm -R -f ./$APP.AppDir/.junest/home
