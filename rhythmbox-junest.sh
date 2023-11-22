@@ -1216,16 +1216,7 @@ rm -R -f ./$APP.AppDir/.junest/usr/include/alpm_list.h
 rm -R -f ./$APP.AppDir/.junest/usr/lib32
 rm -R -f ./$APP.AppDir/.junest/usr/lib/*.a
 rm -R -f ./$APP.AppDir/.junest/usr/lib/bfd-plugins/liblto_plugin.so
-rm -R -f ./$APP.AppDir/.junest/usr/lib/dri/crocus_dri.so
-rm -R -f ./$APP.AppDir/.junest/usr/lib/dri/d3d12_dri.so
-rm -R -f ./$APP.AppDir/.junest/usr/lib/dri/i*
-rm -R -f ./$APP.AppDir/.junest/usr/lib/dri/kms_swrast_dri.so
-rm -R -f ./$APP.AppDir/.junest/usr/lib/dri/r*
-rm -R -f ./$APP.AppDir/.junest/usr/lib/dri/nouveau_dri.so
-rm -R -f ./$APP.AppDir/.junest/usr/lib/dri/radeonsi_dri.so
-rm -R -f ./$APP.AppDir/.junest/usr/lib/dri/virtio_gpu_dri.so
-rm -R -f ./$APP.AppDir/.junest/usr/lib/dri/vmwgfx_dri.so
-rm -R -f ./$APP.AppDir/.junest/usr/lib/dri/zink_dri.so
+rm -R -f ./$APP.AppDir/.junest/usr/lib/dri
 rm -R -f ./$APP.AppDir/.junest/usr/lib/gcc
 rm -R -f ./$APP.AppDir/.junest/usr/lib/git-*
 rm -R -f ./$APP.AppDir/.junest/usr/lib/libalpm.so
@@ -1237,6 +1228,7 @@ rm -R -f ./$APP.AppDir/.junest/usr/lib/libcc1.so.0
 rm -R -f ./$APP.AppDir/.junest/usr/lib/libcc1.so.0.0.0
 rm -R -f ./$APP.AppDir/.junest/usr/lib/libgomp.spec
 rm -R -f ./$APP.AppDir/.junest/usr/lib/libitm.spec
+rm -R -f ./$APP.AppDir/.junest/usr/lib/libLLVM*
 rm -R -f ./$APP.AppDir/.junest/usr/lib/liblsan_preinit.o
 rm -R -f ./$APP.AppDir/.junest/usr/lib/libsanitizer.spec
 rm -R -f ./$APP.AppDir/.junest/usr/lib/libstdc++.a
