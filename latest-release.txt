@@ -1,2 +1,2 @@
 https://github.com/ivan-hc/Rhythmbox-appimage/releases/download/continuous/Rhythmbox_3.4.8-3-archimage4.3-x86_64.AppImage
-Sun Jul 13 01:49:02 UTC 2025
+Mon Jul 14 01:45:09 UTC 2025
